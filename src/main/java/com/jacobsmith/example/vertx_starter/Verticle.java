@@ -16,7 +16,7 @@ public class Verticle extends AbstractVerticle {
     vertx.createHttpServer().requestHandler(req -> {
       req.response()
         .putHeader("content-type", "text/plain")
-        .end("Hello from Vert.x!");
+        .end("Hello from Jacob");
     }).listen(8888, http -> {
       if (http.succeeded()) {
         startPromise.complete();
