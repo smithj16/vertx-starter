@@ -11,7 +11,9 @@ import org.slf4j.LoggerFactory;
 import java.util.UUID;
 
 public class MainVerticle extends AbstractVerticle {
-
+  /*
+    Every verticle runs on it's own thread.
+   */
   private static final Logger log = LoggerFactory.getLogger(MainVerticle.class);
   public static void main(String[] args) {
     final Vertx vertx = Vertx.vertx();
