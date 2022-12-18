@@ -1,4 +1,4 @@
-package EventLoops;
+package com.jacobsmith.example.vertx_starter.EventLoops;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;

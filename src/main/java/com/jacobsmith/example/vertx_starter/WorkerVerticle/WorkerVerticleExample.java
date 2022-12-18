@@ -1,4 +1,4 @@
-package WorkerVerticle;
+package com.jacobsmith.example.vertx_starter.WorkerVerticle;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;

@@ -1,4 +1,4 @@
-package EventBus;
+package com.jacobsmith.example.vertx_starter.EventBus;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
