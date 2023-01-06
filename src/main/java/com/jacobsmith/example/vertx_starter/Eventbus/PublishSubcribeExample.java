@@ -40,6 +40,7 @@ public class PublishSubcribeExample {
     }
   }
 
+
   static class Subscriber2 extends AbstractVerticle {
     private static final Logger log = LoggerFactory.getLogger(Subscriber2.class);
 
