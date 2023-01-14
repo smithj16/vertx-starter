@@ -7,7 +7,7 @@ import io.vertx.core.eventbus.EventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class RequestResponseExample extends AbstractVerticle {
+public class RequestResponseExample {
 
   public static void main(String[] args) {
     Vertx vertx = Vertx.vertx();
