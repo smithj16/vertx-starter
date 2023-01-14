@@ -28,4 +28,12 @@ public class JsonObjectExample {
 
     assertEquals(map, new JsonObject(map).getMap());
   }
+
+  @Test
+  void canMapJavaObject(){
+    final Person person = new Person(1, "Joshua", true);
+    final JsonObject joshua = JsonObject.mapFrom(person);
+    assertEquals(person.getId(), joshua.getInteger("id"));
+  }
+
 }
