@@ -26,14 +26,13 @@ public class PingPongExample {
 
   }
 
-  static class PingVerticle extends AbstractVerticle {
-
+  public static class PingVerticle extends AbstractVerticle {
     private static final Logger log = LoggerFactory.getLogger(PingVerticle.class);
 
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
-      startPromise.complete();
       EventBus eventBus = vertx.eventBus();
+      //eventBus.registerDefaultCodec(Ping.class, new LocalMessageCodec<>(Ping.class));
       final Ping message = new Ping("hello", true);
       log.debug("Sending: {}", message);
       vertx.setPeriodic(1000, id -> {
@@ -43,19 +42,23 @@ public class PingPongExample {
           log.debug("Response: {}", reply.result().body());
         });
       });
+      startPromise.complete();
     }
   }
 
-  static class PongVerticle extends AbstractVerticle{
+  public static class PongVerticle extends AbstractVerticle{
 
     private final static Logger log = LoggerFactory.getLogger(PongVerticle.class);
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
+      EventBus eventBus = vertx.eventBus();
+     // eventBus.registerDefaultCodec(Pong.class, new LocalMessageCodec<>(Pong.class));
       startPromise.complete();
       vertx.eventBus().<Ping>consumer(PingVerticle.class.getName(), message  -> {
         log.debug("Received Message: {}", message.body());
         message.reply(new Pong(0));
       }).exceptionHandler(error -> log.error("ExeceptionHandler: {}", error.getCause()));
+      startPromise.complete();
     }
   }
 }
