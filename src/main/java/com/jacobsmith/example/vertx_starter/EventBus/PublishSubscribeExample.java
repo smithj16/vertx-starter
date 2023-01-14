@@ -14,7 +14,6 @@ public class PublishSubscribeExample {
     vert.deployVerticle(new Publisher());
     vert.deployVerticle(new Subscriber1());
     vert.deployVerticle(new Subscriber2());
-    //vert.deployVerticle(new Publisher());
   }
 
   public static class Publisher extends AbstractVerticle {
