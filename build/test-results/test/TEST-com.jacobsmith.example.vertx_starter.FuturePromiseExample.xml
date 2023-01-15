@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.jacobsmith.example.vertx_starter.FuturePromiseExample" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-15T06:30:24" hostname="JACOBPC" time="0.772">
+<testsuite name="com.jacobsmith.example.vertx_starter.FuturePromiseExample" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-15T06:37:45" hostname="JACOBPC" time="0.84">
   <properties/>
-  <testcase name="future_failure(Vertx, VertxTestContext)" classname="com.jacobsmith.example.vertx_starter.FuturePromiseExample" time="0.772"/>
-  <system-out><![CDATA[00:30:24.324 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
-00:30:24.330 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - End
-00:30:24.845 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Promised Failed with error: {}
-io.vertx.core.impl.NoStackTraceThrowable: failed
+  <testcase name="future_map(Vertx, VertxTestContext)" classname="com.jacobsmith.example.vertx_starter.FuturePromiseExample" time="0.84"/>
+  <system-out><![CDATA[00:37:45.758 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
+00:37:46.263 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Map String to JsonObject
+00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Result: {"key":"complete"}
+00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Timer done.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

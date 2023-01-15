@@ -1,4 +1,4 @@
-d00:30:24.324 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
-b00:30:24.330 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - End
-‹00:30:24.845 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Promised Failed with error: {}
-2io.vertx.core.impl.NoStackTraceThrowable: failed
+d00:37:45.758 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
+…00:37:46.263 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Map String to JsonObject
+‡00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Result: {"key":"complete"}
+x00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Timer done.

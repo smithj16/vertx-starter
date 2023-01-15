@@ -3,6 +3,7 @@ package com.jacobsmith.example.vertx_starter;
 import io.vertx.core.Future;
 import io.vertx.core.Promise;
 import io.vertx.core.Vertx;
+import io.vertx.core.json.JsonObject;
 import io.vertx.junit5.VertxExtension;
 import io.vertx.junit5.VertxTestContext;
 import org.junit.jupiter.api.Test;
@@ -76,6 +77,29 @@ public class FuturePromiseExample {
       log.debug("Promised Failed with error: {}", result);
       context.completeNow();
     });
+  }
+
+  @Test
+  void future_map(Vertx vert, VertxTestContext context){
+
+    final Promise<String> promise = Promise.promise();
+    log.debug("Start");
+    vert.setTimer(500, id -> {
+      promise.complete("complete");
+      log.debug("Timer done.");
+      context.completeNow();
+    });
+
+    final Future<String> future = promise.future();
+    future.map(asString -> {
+      log.debug("Map String to JsonObject");
+      return new JsonObject().put("key", asString);
+      })
+    .onSuccess(result -> {
+      log.debug("Result: {}", result.toString());
+      context.completeNow();
+    }).onFailure(context::failNow);
+
   }
 
 }
