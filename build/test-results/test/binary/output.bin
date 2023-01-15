@@ -1,0 +1,4 @@
+d00:30:24.324 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
+b00:30:24.330 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - End
+‹00:30:24.845 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Promised Failed with error: {}
+2io.vertx.core.impl.NoStackTraceThrowable: failed
