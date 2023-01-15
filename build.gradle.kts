@@ -19,7 +19,7 @@ val vertxVersion = "4.3.5"
 val junitJupiterVersion = "5.7.0"
 val jacksonVersion = "2.11.3"
 
-val mainVerticleName = "com.jacobsmith.example.vertx_starter.MainVerticle"
+val mainVerticleName = "com.jacobsmith.example.vertx_starter.Verticle"
 val launcherClassName = "io.vertx.core.Launcher"
 
 val watchForChange = "src/**/*"

@@ -1,4 +1,0 @@
-d00:37:45.758 [Test worker] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Start
-…00:37:46.263 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Map String to JsonObject
-‡00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Result: {"key":"complete"}
-x00:37:46.371 [vert.x-eventloop-thread-0] DEBUG com.jacobsmith.example.vertx_starter.FuturePromiseExample - Timer done.
